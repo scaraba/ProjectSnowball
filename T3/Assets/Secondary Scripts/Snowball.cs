@@ -41,8 +41,11 @@ public class Snowball : MonoBehaviour {
        
         if (other.gameObject.tag == "PowerUp")
         {
-            AudioSource.PlayClipAtPoint(SnowballGetSound, transform.position);
-            totalTime =- 15;
+            if (SnowballGetSound != null)
+            {
+                AudioSource.PlayClipAtPoint(SnowballGetSound, transform.position);
+            }
+                totalTime =- 15;
             Destroy(other.gameObject);
         }    
     
