@@ -7,7 +7,6 @@ public class SawScript : MonoBehaviour {
     public Transform maxLimX2;
     public float speed;
     public float rotSpeed;
-
 	// Use this for initialization
 	void Start () 
     {
@@ -23,8 +22,8 @@ public class SawScript : MonoBehaviour {
             newPos.x = maxLimX2.position.x;
             transform.position = newPos;
         }
-        //transform.Rotate(transform.forward, rotSpeed * Time.deltaTime);
-        transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
-
-	}
+        
+        transform.Rotate(transform.forward, rotSpeed * Time.deltaTime,Space.World);
+        transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0),Space.World);
+    }
 }
