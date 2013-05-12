@@ -6,9 +6,9 @@ public class Spawner : MonoBehaviour {
     public GameObject m_spawnPoint;
     public float m_spawnRate;
     private float m_spawnTimer;
-    public GameObject m_powerUp;
+    //public GameObject m_powerUp;
    // public int m_upgradeShip;
-    private int m_shipCounter = 0;
+    //private int m_shipCounter = 0;
 
 
 	// Use this for initialization
