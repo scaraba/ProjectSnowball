@@ -3,26 +3,14 @@ using System.Collections;
 
 public class Snowball : MonoBehaviour {
 	
-	
 	public AudioClip SnowballGetSound;
 	// Use this for initialization
 	public GameObject Snowballpickup;
    
-	//public Texture2D[] Snowballamount;
-	//public GUITexture snowAmountHUDGUI;
-
-   // public float snowballsize;
     public float timetoZero;
     public string killScreen;
     private float totalTime = 0;
     private float scaleFactor;
-
-
-
-	void Start ()
-    {
-	
-	}
 	
 	// Update is called once per frame
 	void Update () 
@@ -39,19 +27,21 @@ public class Snowball : MonoBehaviour {
     }
 	//IF SNOWBALL = 0 GAME OVER;
 
-	public void SnowGet()
-	{
-		AudioSource.PlayClipAtPoint(SnowballGetSound,transform.position);
-		//snowballsize++;
-		//snowAmountHUDGUI.texture = Snowballamount[snowballsize];
-		GameObject.DestroyObject(Snowballpickup);
-	}
+
+    void OnGUI(){
+    GUI.Label(new Rect(10,10,100,20),"Time:"+ Mathf.Round(timetoZero-totalTime));
+    
+    
+    
+    }
+	
 
     void OnTriggerEnter(Collider other)
     {
        
         if (other.gameObject.tag == "PowerUp")
         {
+            AudioSource.PlayClipAtPoint(SnowballGetSound, transform.position);
             totalTime =- 15;
             Destroy(other.gameObject);
         }    
