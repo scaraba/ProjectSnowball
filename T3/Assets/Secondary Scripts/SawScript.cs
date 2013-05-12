@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class SawScript : MonoBehaviour {
+public class SawScript : Trap {
     
     public Transform maxLimX1;
     public Transform maxLimX2;

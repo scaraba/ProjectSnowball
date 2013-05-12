@@ -54,8 +54,16 @@ public class Snowball : MonoBehaviour {
         {
             totalTime =- 15;
             Destroy(other.gameObject);
+        }    
+    
+        if (other.gameObject.tag == "Trap")
+        {
+            
+            other.gameObject.GetComponent<Trap>();
+            totalTime += other.gameObject.GetComponent<Trap>().damage;
+
         }
-       
     
     }
+
 }
