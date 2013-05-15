@@ -5,7 +5,7 @@ public class Snowball : MonoBehaviour {
 	
 	public AudioClip SnowballGetSound;
 	// Use this for initialization
-	public GameObject Snowballpickup;
+	//public GameObject Snowballpickup;
    
     public float timetoZero;
     public string killScreen;
