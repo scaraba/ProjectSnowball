@@ -9,6 +9,8 @@
 // on the right joystick will make the character jump.
 //////////////////////////////////////////////////////////////
 
+#pragma strict
+
 @script RequireComponent( CharacterController )
 
 // This script must be attached to a GameObject that has a CharacterController

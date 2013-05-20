@@ -7,8 +7,10 @@
 // The left stick is used to move the character, and the right
 // stick is used to rotate the camera around the character.
 // A quick double-tap on the right joystick will make the 
-// character jump.
+// character jump. 
 //////////////////////////////////////////////////////////////
+
+#pragma strict
 
 // This script must be attached to a GameObject that has a CharacterController
 @script RequireComponent( CharacterController )

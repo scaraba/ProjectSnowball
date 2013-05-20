@@ -13,3 +13,9 @@ T3/Library/
 T3/Temp/
 T3/T3-csharp.sln
 T3/T3.sln
+T3/Assembly-CSharp-firstpass-vs.csproj
+T3/Assembly-CSharp-firstpass.csproj
+T3/Assembly-CSharp-firstpass.pidb
+T3/Assembly-UnityScript-vs.unityproj
+T3/Assembly-UnityScript.pidb
+T3/Assembly-UnityScript.unityproj
